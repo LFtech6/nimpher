@@ -132,7 +132,7 @@ button { font: inherit; }
 .mpanel { display: none; }
 .mpanel[data-open='true'] {
   display: block; position: fixed; inset: 74px 0 0; z-index: 55;
-  background: var(--paper); padding: 26px 24px; overflow-y: auto;
+  background: var(--paper); padding: 26px 24px 48px; overflow-y: auto;
 }
 .mpanel a:not(.btn) {
   display: block; font-family: var(--display); font-size: 1.4rem; font-weight: 600;
@@ -495,8 +495,17 @@ a.cline__val:hover { color: var(--amber-soft); }
 /* Painel móvel: rodapé com CTA e idiomas */
 .mpanel__foot { margin-top: 24px; display: grid; gap: 12px; }
 .mpanel__foot .btn { font-size: 1.05rem; }
-.langsw--panel { justify-content: center; font-size: 13.5px; gap: 8px; }
-.langsw--panel a { padding: 7px 12px; }
+/* Versão do painel móvel: controlo segmentado. As regras usam
+   .mpanel .langsw para vencer o estilo genérico .mpanel a:not(.btn). */
+.langsw--panel {
+  margin: 2px auto 0; width: max-content; gap: 4px;
+  background: var(--white); border: 1px solid var(--line); border-radius: 100px; padding: 4px;
+}
+.mpanel .langsw a {
+  display: inline-block; font-family: var(--mono); font-size: 13.5px; font-weight: 500;
+  padding: 8px 18px; border-bottom: 0; border-radius: 100px; color: var(--slate);
+}
+.mpanel .langsw a[aria-current='true'] { background: var(--ink); color: #fff; }
 
 /* ---------- Faixa de conversão (homepage) ---------- */
 .bigcta { display: flex; align-items: center; justify-content: space-between; gap: 30px; flex-wrap: wrap; }
