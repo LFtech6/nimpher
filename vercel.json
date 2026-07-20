@@ -1,0 +1,76 @@
+{
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/loja",
+      "destination": "/servicos/",
+      "statusCode": 301
+    },
+    {
+      "source": "/loja/:path*",
+      "destination": "/servicos/",
+      "statusCode": 301
+    },
+    {
+      "source": "/categoria-produto/monitores-de-energia",
+      "destination": "/servicos/eficiencia-energetica/",
+      "statusCode": 301
+    },
+    {
+      "source": "/categoria-produto/monitores-de-energia/:path*",
+      "destination": "/servicos/eficiencia-energetica/",
+      "statusCode": 301
+    },
+    {
+      "source": "/produto/owl-intuition-e",
+      "destination": "/servicos/eficiencia-energetica/",
+      "statusCode": 301
+    },
+    {
+      "source": "/produto/owlusb",
+      "destination": "/servicos/eficiencia-energetica/",
+      "statusCode": 301
+    },
+    {
+      "source": "/produto/owlusbtrifasico",
+      "destination": "/servicos/eficiencia-energetica/",
+      "statusCode": 301
+    },
+    {
+      "source": "/produto/owlmicro",
+      "destination": "/servicos/eficiencia-energetica/",
+      "statusCode": 301
+    },
+    {
+      "source": "/produto/owl-intuition-lc-c-3-sensores-standard",
+      "destination": "/servicos/eficiencia-energetica/",
+      "statusCode": 301
+    },
+    {
+      "source": "/produto/owl-intuition-pv",
+      "destination": "/servicos/eficiencia-energetica/",
+      "statusCode": 301
+    },
+    {
+      "source": "/produto/owl-intuition-pv-trifasico",
+      "destination": "/servicos/eficiencia-energetica/",
+      "statusCode": 301
+    },
+    {
+      "source": "/produto/owl",
+      "destination": "/servicos/eficiencia-energetica/",
+      "statusCode": 301
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
+      ]
+    }
+  ]
+}
