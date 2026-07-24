@@ -465,6 +465,7 @@ a.cline__val:hover { color: var(--amber-soft); }
 }
 @media (max-width: 820px) {
   .nav__links, .nav__cta .btn { display: none; }
+  .nav__cta > .langsw { display: none; }
   .burger { display: block; }
   .nav__phone { display: inline-flex; }
 }
